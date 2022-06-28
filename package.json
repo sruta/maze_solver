@@ -1,0 +1,31 @@
+{
+  "name": "sruta_maze_solver",
+  "version": "1.0.0",
+  "description": "This app aims to show how to structure a project while solves a maze",
+  "author": "Santiago Ruta <ruta2366@gmail.com>",
+  "main": "app.js",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node dist/src/app.js",
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/src/app.js\"",
+    "test": "jest"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.16.1",
+    "jsonschema": "^1.4.1",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@jest-mock/express": "^2.0.0",
+    "@types/express": "^4.17.13",
+    "@types/jest": "^28.1.3",
+    "@types/node": "^18.0.0",
+    "@types/uuid": "^8.3.4",
+    "concurrently": "^7.2.2",
+    "jest": "^28.1.1",
+    "nodemon": "^2.0.16",
+    "ts-jest": "^28.0.5",
+    "typescript": "^4.7.4"
+  }
+}
